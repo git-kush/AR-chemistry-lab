@@ -17,11 +17,19 @@ public class ColourHeigh : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         { a++; 
-         // time=Time.deltatime;
+           Invoke("HeightChange",0.8f);
          }
 
-          if(a>=4) GetComponent<Renderer>().material.color = Color.red;
+          if(a>=4) Invoke("ColorChange",1f);
     
+    }
+
+    void ColorChange(){
+         
+         GetComponent<Renderer>().material.color = Color.red;
+    }
+    void HeightChange(){
+        transform.localScale = transform.localScale + new Vector3(0, 0 , 10f);
     }
 
     
