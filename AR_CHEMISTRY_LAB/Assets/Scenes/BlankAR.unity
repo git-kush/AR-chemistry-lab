@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -811,7 +811,6 @@ GameObject:
   - component: {fileID: 1394039653}
   - component: {fileID: 1394039652}
   - component: {fileID: 1394039656}
-  - component: {fileID: 1394039657}
   m_Layer: 0
   m_Name: trialdrop
   m_TagString: Untagged
@@ -861,7 +860,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 0
+  m_RenderMode: 4
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -882,7 +881,7 @@ ParticleSystemRenderer:
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
   m_VertexStreams: 00010304
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: -5495902117074765545, guid: de4da3906a001624fabcc7838ddf2eb4, type: 3}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -899,7 +898,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394039651}
   serializedVersion: 8
-  lengthInSec: 0.5
+  lengthInSec: 0.1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -1725,7 +1724,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 500
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4788,11 +4787,11 @@ ParticleSystem:
   TrailModule:
     enabled: 0
     mode: 0
-    ratio: 1
+    ratio: 0.01
     lifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5626,19 +5625,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b641d315b48e495449e9b197728e8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &1394039657
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394039651}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.00002, y: 0.00002, z: 0.00002}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1426979296
 PrefabInstance:
   m_ObjectHideFlags: 0

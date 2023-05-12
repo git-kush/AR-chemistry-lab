@@ -13,11 +13,11 @@ public class DestroyDrops : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      //  if(Input.GetKeyDown(KeyCode.Space)) Destroy(gameObject, 0.5f);
     }
 
-    private void OnCollisionEnter(Collision Collision){
+    // private void OnCollisionEnter(Collision Collision){
 
-        Destroy(gameObject, 0.05f);
-    }
+    //     Destroy(gameObject, 0.05f);
+    // }
 }
