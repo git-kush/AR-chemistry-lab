@@ -13,8 +13,9 @@ public class ColourHeigh : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+     void Update()
     {
+       
         if(Input.GetKeyDown(KeyCode.Space))
         { a++; 
            Invoke("HeightChange",0.8f);
@@ -23,14 +24,18 @@ public class ColourHeigh : MonoBehaviour
           if(a>=4) Invoke("ColorChange",1f);
     
     }
-
-    void ColorChange(){
+  public void check(){
+         a++; 
+           Invoke("HeightChange",0.8f);
+         
+    }
+     void ColorChange(){
          
          GetComponent<Renderer>().material.color = Color.red;
     }
-    void HeightChange(){
+     void HeightChange(){
         transform.localScale = transform.localScale + new Vector3(0, 0 , 10f);
     }
-
+    
     
 }
