@@ -12,6 +12,7 @@ public class ColourHeigh : MonoBehaviour
     void Start(){
 
     }
+
     public TextMeshProUGUI user_name;
     public TMP_InputField user_inputField;
     public string n1;
