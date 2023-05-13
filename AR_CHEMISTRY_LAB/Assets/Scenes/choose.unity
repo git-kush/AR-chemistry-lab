@@ -655,7 +655,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 1
+  m_TargetDisplay: 0
 --- !u!224 &1803266940
 RectTransform:
   m_ObjectHideFlags: 0
@@ -686,7 +686,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803266936}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &1803266942
 AudioSource:
   m_ObjectHideFlags: 0
