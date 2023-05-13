@@ -7,11 +7,15 @@ public class ColourHeigh : MonoBehaviour
     // Start is called before the first frame update
     int a=0;
     float time;
-    void Start()
-    {
-        
-    }
+    private string input1;
+    private string input2;
+    float i1,i2;
 
+    void Start(){
+
+    }
+   
+ 
     // Update is called once per frame
      void Update()
     {
@@ -21,9 +25,21 @@ public class ColourHeigh : MonoBehaviour
            Invoke("HeightChange",0.8f);
          }
 
-          if(a>=4) Invoke("ColorChange",1f);
+          if(a>=i1) Invoke("ColorChange",1f);
     
-    }
+
+   }
+      public void ReadScriptInput1(string s){
+      input1=s;
+      Debug.Log(input1);
+      i1=((int)input1[0]-48);
+
+      }
+      public void ReadScriptInput2(string t){
+      input2=t;
+      Debug.Log(input2);
+     i2=((int)input2[0]-48);
+      }
   public void check(){
          a++; 
            Invoke("HeightChange",0.8f);
