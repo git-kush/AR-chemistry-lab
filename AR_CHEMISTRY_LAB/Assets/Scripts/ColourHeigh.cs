@@ -6,10 +6,15 @@ public class ColourHeigh : MonoBehaviour
 {   //public GameObject cylinder;
     // Start is called before the first frame update
     int a=0;
-    float time;
+    //string s=tm.n1pass;
+   // int fn1=tm.n1pass.ToString();
+   // int fn1=int.Parse(s);
+
+    //float time;
     //public int ni1;
 
-    void Start(){
+    void Start()
+    {
 
     }
 
@@ -39,7 +44,7 @@ public class ColourHeigh : MonoBehaviour
 
           if(a>=4) Invoke("ColorChange",1f);
     
-          }
+    }
 
     
   public void check(){
