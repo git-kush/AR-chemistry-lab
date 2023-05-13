@@ -14,10 +14,10 @@ public class DropingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {   
-        if(Input.GetKeyDown(KeyCode.Space)) SpwanDrop();  
+       // if(Input.GetKeyDown(KeyCode.Space)) SpwanDrop();  
     }
 
-    public void SpwanDrop(){
+    void SpwanDrop(){
         Instantiate(drop, spwanposition.position, Quaternion.identity);
     }
 }
