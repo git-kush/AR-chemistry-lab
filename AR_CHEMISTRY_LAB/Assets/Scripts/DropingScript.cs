@@ -17,7 +17,7 @@ public class DropingScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space)) SpwanDrop();  
     }
 
-    void SpwanDrop(){
+    public void SpwanDrop(){
         Instantiate(drop, spwanposition.position, Quaternion.identity);
     }
 }
