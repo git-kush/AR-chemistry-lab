@@ -1,19 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class ColourHeigh : MonoBehaviour
 {   //public GameObject cylinder;
     // Start is called before the first frame update
     int a=0;
     float time;
-    private string input1;
-    private string input2;
-    float i1,i2;
+    public int ni1;
 
     void Start(){
 
     }
+    public TextMeshProUGUI user_name;
+    public TMP_InputField user_inputField;
+    public string n1;
+
+    public void setName(){
+	    user_name.text=user_inputField.text;
+	    Debug.Log(user_inputField.text);
+        n1=user_inputField.text;
+       ni1=int.Parse(n1);
+        Debug.Log(ni1);
+        
+ }
    
  
     // Update is called once per frame
@@ -23,23 +33,14 @@ public class ColourHeigh : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         { a++; 
            Invoke("HeightChange",0.8f);
+           
          }
 
-          if(a>=i1) Invoke("ColorChange",1f);
+          if(a>=ni1) Invoke("ColorChange",1f);
     
+          }
 
-   }
-      public void ReadScriptInput1(string s){
-      input1=s;
-      Debug.Log(input1);
-      i1=((int)input1[0]-48);
-
-      }
-      public void ReadScriptInput2(string t){
-      input2=t;
-      Debug.Log(input2);
-     i2=((int)input2[0]-48);
-      }
+    
   public void check(){
          a++; 
            Invoke("HeightChange",0.8f);
@@ -51,7 +52,7 @@ public class ColourHeigh : MonoBehaviour
     }
      void HeightChange(){
         transform.localScale = transform.localScale + new Vector3(0, 0 , 10f);
-    }
+    }}
     
     
-}
+
