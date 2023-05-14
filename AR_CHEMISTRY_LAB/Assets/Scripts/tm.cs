@@ -5,11 +5,16 @@ using TMPro;
 
 public class tm : MonoBehaviour
 {
- public static TextMeshProUGUI n1pass;
+ public int n1pass;
  public TMP_InputField N1input;
 
  public void AssignParameter(){
-	n1pass.text=N1input.text;
+	string sn1 =N1input.text;
+	if (!string.IsNullOrEmpty(sn1))
+        {
+            n1pass = int.Parse(sn1);
+           // Debug.Log("Integer value: " + intValue);
+        }
 	
 	// Debug.Log(user_inputField.text);
  }

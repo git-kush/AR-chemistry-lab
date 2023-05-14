@@ -5,6 +5,7 @@ using TMPro;
 public class ColourHeigh : MonoBehaviour
 {   //public GameObject cylinder;
     // Start is called before the first frame update
+    [SerializeField] private tm tmScript;
      int a=0;
     //   string sn1=tm.n1pass.text;
     //   int fn1=sn1.ToInt32();
@@ -38,8 +39,8 @@ public class ColourHeigh : MonoBehaviour
            
         
     //      }
-
-          if(a>=4) Invoke("ColorChange",1f);
+     Debug.Log(tmScript.n1pass);
+        //  if(a>=(tm.n1pass)) Invoke("ColorChange",1f);
     
     }
 
@@ -47,6 +48,8 @@ public class ColourHeigh : MonoBehaviour
   public void check(){
          a++; 
            Invoke("HeightChange",0.8f);
+           if(a>=(tmScript.n1pass)) Invoke("ColorChange",1f);
+   
          
     }
      void ColorChange(){
