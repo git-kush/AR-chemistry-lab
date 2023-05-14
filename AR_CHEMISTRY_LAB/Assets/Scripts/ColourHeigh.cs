@@ -39,7 +39,7 @@ public class ColourHeigh : MonoBehaviour
            
         
     //      }
-     Debug.Log(tmScript.n1pass);
+     //Debug.Log(tmScript.n1pass);
         //  if(a>=(tm.n1pass)) Invoke("ColorChange",1f);
     
     }
@@ -48,7 +48,7 @@ public class ColourHeigh : MonoBehaviour
   public void check(){
          a++; 
            Invoke("HeightChange",0.8f);
-           if(a>=(tmScript.n1pass)) Invoke("ColorChange",1f);
+           if(a>=4) Invoke("ColorChange",1f);
    
          
     }
