@@ -5,13 +5,10 @@ using TMPro;
 public class ColourHeigh : MonoBehaviour
 {   //public GameObject cylinder;
     // Start is called before the first frame update
-    int a=0;
-    //string s=tm.n1pass;
-   // int fn1=tm.n1pass.ToString();
-   // int fn1=int.Parse(s);
-
-    //float time;
-    //public int ni1;
+     int a=0;
+    //   string sn1=tm.n1pass.text;
+    //   int fn1=sn1.ToInt32();
+    
 
     void Start()
     {
